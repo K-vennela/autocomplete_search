@@ -16,7 +16,12 @@ def search():
   
   print("key is",key,"domain is",domain,"search type is",search)
 
-  dict_domain = {"Animals":["tiger","cat","goat","cheetah","lion","dog","fox","cow","monkey","zebra"],"Birds":["parrot","pigeon","owl","sparrow","crow","eagle"],"Flowers":["lily","lotus","jasmine","hibiscus","rose","tulip"]}
+  #dict_domain = {"Animals":["tiger","cat","goat","cheetah","lion","dog","fox","cow","monkey","zebra"],"Birds":["parrot","pigeon","owl","sparrow","crow","eagle"],"Flowers":["lily","lotus","jasmine","hibiscus","rose","tulip"]}
+
+  with open("datadict.json") as f:
+    dict_domain = json.load(f)
+
+  print(dict_domain)
 
   filtered_dict=[]
 
