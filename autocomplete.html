@@ -16,10 +16,12 @@
     //console.log(domain.value)
     //console.log(search)
     //console.log(search.value)
+    //only if the filed entered in the text box exceeds more than one character
     if(key.value.length>0)
     {
     xhr_object = new XMLHttpRequest();
     xhr_object.onload = showlist
+    //make a get request
     xhr_object.open('GET', 'http://127.0.0.1:5000/search?key='+key.value+'&domain='+domain.value+'&search='+search.value);
     xhr_object.send();
     }
@@ -33,12 +35,14 @@
         console.log(resJSON)
 
         var datalist = document.getElementById("words");
+        //remove all the existing suggestions
         datalist.innerHTML='';
 
         if (resJSON.length)
         {
           for(var i =0, len = resJSON.length; i< len;i++)
           {
+            //for every word that is returned create a datalist and append 
             var opt = document.createElement("option")
             opt.setAttribute("value",resJSON[i]);
             datalist.append(opt)
