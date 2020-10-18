@@ -13,7 +13,7 @@ def search():
   
   print("key is",key,"domain is",domain,"search type is",search)
 
-  dict_domain = {"Animals":["tiger","cat","goat","cheetah"],"Birds":["parrot","pigeon","owl","sparrow"],"Flowers":["lily","lotus","jasmine"]}
+  dict_domain = {"Animals":["tiger","cat","goat","cheetah","lion","dog","fox","cow","monkey","zebra"],"Birds":["parrot","pigeon","owl","sparrow","crow","eagle"],"Flowers":["lily","lotus","jasmine","hibiscus","rose","tulip"]}
 
   filtered_dict=[]
 
