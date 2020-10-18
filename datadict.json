@@ -1,0 +1,34 @@
+{
+   "Animals":[
+      "tiger",
+      "cat",
+      "goat",
+      "cheetah",
+      "lion",
+      "dog",
+      "fox",
+      "cow",
+      "monkey",
+      "zebra"
+   ],
+   "Birds":[
+      "parrot",
+      "pigeon",
+      "owl",
+      "sparrow",
+      "crow",
+      "eagle"
+   ],
+   "Flowers":[
+      "lily",
+      "lotus",
+      "jasmine",
+      "hibiscus",
+      "rose",
+      "tulip"
+   ],
+   "Sports":[
+      "cricket",
+      "tennis"
+   ]
+}
